@@ -7,13 +7,16 @@
 */
 Package.describe({
   summary: "Handsontable 0.11.0-beta3 for meteor",
-  version: "0.11.0-beta3-a",
+  version: "0.11.0-beta4-i",
   name: "gbrunner:handsontable",
   git: "https://github.com/Vilango/meteor-handsontable.git"
 });
-Package.onUse(function (api, where) {
-  api.versionsFrom('METEOR@0.9.0');
-	api.use(['jquery'], 'client');
-	api.addFiles(['libs/jquery.handsontable.full.js','libs/jquery.handsontable.full.css'], 'client');
+Package.on_use(function (api, where) {
+  //api.versionsFrom('METEOR@0.9.0.1');
+  //api.versionsFrom('METEOR@0.9.1');
+	//api.use(['jquery'], 'client');
+  api.use('jquery@1.0.0', ['client']);
+
+	api.add_files(['libs/jquery.handsontable.full.js','libs/jquery.handsontable.full.css'], 'client');
 	api.export("Handsontable");
 });

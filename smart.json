@@ -1,0 +1,9 @@
+{
+  "name": "gbrunner:handsontable",
+  "description": "Handsontable 0.11.0-beta3 for meteor",
+  "homepage": "https://github.com/sujith3g/meteor-handsontable.git",
+  "author": "Sujith G",
+  "version": "0.11.0-beta4-i",
+  "git": "https://github.com/sujith3g/meteor-handsontable.git",
+  "packages": { }
+}
